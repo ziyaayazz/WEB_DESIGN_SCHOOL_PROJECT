@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="soru.cozumu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="board">
+    <h3 id="time">Süre:</h3>
+    <h3 id="point">Puan:</h3>
+    <p id="qp1">1</p>
+    <p id="qp2">2</p>
+    <p id="qp3">3</p>
+    <p id="qp4">4</p>
+    <p id="qp5">5</p>
+    <p id="qp6">6</p>
+    <p id="qp7">7</p>
+    <p id="qp8">8</p>
+    <p id="qp9">9</p>
+    <p id="qp10">10</p>
+  </div>
+  <div class="main">
+    <div class="question">
+      <p><strong>1.</strong>Okunuşu <strong>"Dört yüz elli altı bin dokuz yüz beş"</strong> olan sayı aşağıdakilerden hangisidir ?</p>
+      <input type="radio" name="qp1" value="456005" onclick="control(1,'456005')"> 456005 <br>
+      <input type="radio" name="qp1" value="459605" onclick="control(1,'459605')"> 459605 <br>
+      <input type="radio" name="qp1" value="456905" onclick="control(1,'456905')"> 456905 <br>
+      <input type="radio" name="qp1" value="456095" onclick="control(1,'456095')"> 456095 
+    </div>
+    <div class="question">
+      <p><strong>2.</strong><strong> " 34, 56, 67, 32, 45, 76, 21 " </strong>yandaki doğal sayılardan tek olanların toplamı kaçtır ?</p>
+      <input type="radio" name="q2" value="135" onclick="control(2,'135')"> 135<br>
+      <input type="radio" name="q2" value="134" onclick="control(2,'134')"> 134 <br>
+      <input type="radio" name="q2" value="133" onclick="control(2,'133')"> 133 <br>
+      <input type="radio" name="q2" value="132" onclick="control(2,'132')"> 132 
+    </div>
+     <div class="question">
+      <p><strong>3.</strong><strong> " Payı, paydasından küçük kesirlere ............... denir ? " </strong> Boş bırakılan yere aşağıdakilerden  hangisi gelmelidir ? </p>
+      <input type="radio" name="q3" value="BASİT" onclick="control(3,'BASİT')"> BASİT<br>
+      <input type="radio" name="q3" value="BİLEŞİK" onclick="control(3,'BİLEŞİK')"> BİLEŞİK <br>
+      <input type="radio" name="q3" value="ONDALIKLI" onclick="control(3,'ONDALIKLI')"> ONDALIKLI <br>
+      <input type="radio" name="q3" value="TAM SAYILI" onclick="control(3,'TAM SAYILI')"> TAM SAYILI 
+    </div>
+    <div class="question">
+      <p><strong>4.</strong>Aşağıdakilerden hangisi <strong>basit</strong> kesir değildir ?   </p>
+      <input type="radio" name="q4" value="6/3" onclick="control(4,'6/3')"> 6/3<br>
+      <input type="radio" name="q4" value="1/5" onclick="control(4,'1/5')"> 1/5 <br>
+      <input type="radio" name="q4" value="2/7" onclick="control(4,'2/7')"> 2/7 <br>
+      <input type="radio" name="q4" value="1/3" onclick="control(4,'1/3')"> 1/3 
+    </div>
+    <div class="question">
+      <p><strong>5.</strong>280 metrelik bir sokağın bir kenarına 4’er metre arayla fidan dikilecektir.<strong> Kaç fidan gereklidir </strong> ?   </p>
+      <input type="radio" name="q5" value="60" onclick="control(5,'60')"> 60<br>
+      <input type="radio" name="q5" value="70" onclick="control(5,'70')"> 70 <br>
+      <input type="radio" name="q5" value="80" onclick="control(5,'80')"> 80 <br>
+      <input type="radio" name="q5" value="90" onclick="control(5,'90')"> 90 
+    </div>
+    <div class="question">
+      <p><strong>6.</strong>Aşağıdakilerden hangisi suyun önemini <strong>ifade etmez ?</strong> </p>
+      <input type="radio" name="q6" value="Besinlerin sindirilmesine ve tamamlanmasına yardımcıdır." onclick="control(6,'Besinlerin sindirilmesine ve tamamlanmasına yardımcıdır.')"> Besinlerin sindirilmesine ve tamamlanmasına yardımcıdır.<br>
+      <input type="radio" name="q6" value="Vücutta düzenleyici olarak görev alır." onclick="control(6,'Vücutta düzenleyici olarak görev alır.')"> Vücutta düzenleyici olarak görev alır. <br>
+      <input type="radio" name="q6" value="Vücudun gereksinim duyduğu susuzluğu giderir." onclick="control(6,'Vücudun gereksinim duyduğu susuzluğu giderir.')"> Vücudun gereksinim duyduğu susuzluğu giderir. <br>
+      <input type="radio" name="q6" value="Vücut ısısını ayarlar." onclick="control(6,'Vücut ısısını ayarlar.')"> Vücut ısısını ayarlar.
+  </div>
+    <div class="question">
+      
+        <p><strong>7.</strong> İçinde 40 ml su bulunan kaba bir taş atılınca suyun yüksekliği 80 ml olarak ölçülüyor.</p>
+        <img src="sorufoto.jpeg" alt="resim" style="display:block;"/> 
+      <p><strong>Buna göre taşın hacmi kaç ml suya karşılık gelmektedir?</strong></p>
+      <input type="radio" name="q7" value="20" onclick="control(7,'20')"> 20<br>
+      <input type="radio" name="q7" value="30" onclick="control(7,'30')"> 30 <br>
+      <input type="radio" name="q7" value="40" onclick="control(7,'40')"> 40 <br>
+      <input type="radio" name="q7" value="60" onclick="control(7,'60')"> 60 
+    </div>
+     <div class="question">
+      <p> <img src="sorufoto2.jpeg" alt="resim" style="display:block; margin-bottom:10px;"/> <strong>8.</strong>Buna göre aşağıdakilerden hangisi <u>yanlıştır</u>?</p>
+      <input type="radio" name="q8" value="L maddesi akışkandır." onclick="control(8,'L maddesi akışkandır.')"> L maddesi akışkandır.<br>
+      <input type="radio" name="q8" value="M maddesi sıkıştıralabilir." onclick="control(8,'M maddesi sıkıştıralabilir.')"> M maddesi sıkıştıralabilir. <br>
+      <input type="radio" name="q8" value="K maddesi gözle görülemeyebilir." onclick="control(8,'K maddesi gözle görülemeyebilir.')"> K maddesi gözle görülemeyebilir. <br>
+      <input type="radio" name="q8" value="L maddesi ısıtılınca hal değiştirebilir." onclick="control(8,'L maddesi ısıtılınca hal değiştirebilir.')"> L maddesi ısıtılınca hal değiştirebilir.
+    </div>
+    <div class="question">
+      <p><strong>9.</strong> Sıvılar belirli bir şekle sahip değildirler. ____
+      Yandaki cümlenin devamı ne olmalıdır? </p>
+      <input type="radio" name="q9" value="Sıvılar ısıtıldığında buharlaşır." onclick="control(9,'Sıvılar ısıtıldığında buharlaşır.')"> Sıvılar ısıtıldığında buharlaşır. <br>
+      <input type="radio" name="q9" value="Dolaba konulduğunda su buharı donar." onclick="control(9,'Dolaba konulduğunda su buharı donar.')"> Dolaba konulduğunda su buharı donar. <br>
+      <input type="radio" name="q9" value="Sıvılar konulduğu kabın şeklini alır." onclick="control(9,'Sıvılar konulduğu kabın şeklini alır.')"> Sıvılar konulduğu kabın şeklini alır. <br>
+      <input type="radio" name="q9" value="Su saydam bir maddedir." onclick="control(9,'Su saydam bir maddedir.')"> Su saydam bir maddedir. 
+    </div>
+    <div class="question">
+      <p><strong>10.</strong>Aşağıdakilerden hangisi hem su hemde karada yaşayabilir ?</p>
+      <input type="radio" name="q10" value="Kertenkele" onclick="control(10,'Kertenkele')"> Kertenkele<br>
+      <input type="radio" name="q10" value="Timsah" onclick="control(10,'Timsah')"> Timsah <br>
+      <input type="radio" name="q10" value="Köpek" onclick="control(10,'Köpek')"> Köpek<br>
+      <input type="radio" name="q10" value="Aslan" onclick="control(10,'Aslan')"> Aslan 
+    </div>
+    
+  <script src="sorucozumu.js"></script>
+</body>
+
+</html>

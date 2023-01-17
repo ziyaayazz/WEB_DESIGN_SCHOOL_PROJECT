@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(education.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ust_menu{
+    background-color: rgb(9, 32, 42);
+    text-align: center;
+}
+.ust_menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+.ust_menu ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+.ust_menu ul li a{
+    text-decoration: none;
+    color:white;
+}
+.menu-1{
+    display: none;
+}
+.ust_menu ul li:hover .menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(9,32,42);
+    margin-top: 10x;
+    margin-right: 10px;
+    font-size: 10px;
+}
+.ust_menu ul li:hover .menu-1 ul{
+    display: block;
+}
+.ust_menu ul li:hover .menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(176, 71, 71);
+    background:transparent;
+    text-align: left;
+}
+.icerik{ 
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: wheat;
+    text-align: center;
+}
